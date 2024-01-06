@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <script type="text/javascript">
+        var user = '{{request.user}}'
+    </script> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Home Page</title>
+</head>
+<body>
+
+    <!-- Header Part -->
+    <div class="header">
+
+        <div class="navbar">
+
+            <div class="navbar-logo">
+                <P>Bike<span>S</span>olution</P>
+            </div>
+
+
+            <div class="navbar-content">
+
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'requests' %}">Service Request</a></li>
+                    <li><a href="{% url 'store' %}">Product</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="#">Login/Signup</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+    <div class="container-fluid">
+
+        <div class="content">
+            
+            <div class="title">We Provide
+                <div class="slider">
+                    <div>Expert Mechanics</div>
+                    <div>Genuine Parts</div>
+                    <div>Bike Service</div>
+                </div>
+            </div>
+            <p>We are your full-service automotive online bike service provider. We are proudly service all bike models, <br> with minor and major repairs. Our Mechanics team are highly experienced.</p>
+            <a href="{% url 'requests' %}">
+                <button>Book Your Service Now</button>
+            </a>
+            
+        </div>
+
+    </div>
+
+
+
+    <!-- SERVICES SECTION -->
+
+    <div class="container">
+
+        <!--Services title Section-->
+        <div class="services">
+
+            <h1>Our Services</h1>
+            
+        </div>
+
+        <!--Bootstrap class row-->
+        <div class="row">
+            <!--Bootstrap class-->
+            <div class="col-md-4">
+
+                <div class="service-box">
+
+                    <h3>Schedule Service</h3>
+                    <p>We provide all kind of bike related services whether it is time for scheduled maintenance or big issue </p>
+                    <a href="{% url 'schedule_service' %}">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="service-box">
+
+                    <h3>Expert Mechanics</h3>
+                    <p>Our Mechanics team are highly experienced. They are dedicated to providing high-quality repairs to keep you safe and stress free. </p>
+                    <a href="{% url 'mechanic_page' %}">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="service-box">
+
+                    <h3>Genuine Parts</h3>
+                    <p>We provide all kind of bikes genuine parts at best prices. So waht are you waiting for visit now</p>
+                    <a href="{% url 'store' %}"">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="service-box">
+
+                    <h3>Blogs</h3>
+                    <p>Read Blogs to understand more about bike. Experts are writing on our platform</p>
+                    <a href="{% url 'blog' %}"">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer Part -->
+    <div class="footer">
+
+        <div class="row">
+
+            <div class="col">
+                <h3 class="footer-logo">Bike<span>S</span>olution</h3>
+                <ul>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Support Links</h3>
+                <ul>
+                    <li><a href=""> Privacy Policy</a></li>
+                    <li><a href=""> Terms and Condition</a></li>
+                    <li><a href=""> Support</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="">12 PC,Road Mohammadpur</a></li>
+                    <li><a href=""> bike_solution@gmail.com</a></li>
+                    <li><a href=""> 01824755531</a></li>
+                </ul>
+            </div>
+
+            <hr>
+            
+            <div class="copyright">
+                <p>Copyright 2023 All Right Reserved</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4e1dbdcb1.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

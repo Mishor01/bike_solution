@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style_1.css' %}">
+    <title>Service Request</title>
+</head>
+<body>
+
+
+    <!-- Header Part -->
+    <div class="header">
+
+        <div class="navbar">
+
+            <div class="navbar-logo">
+                <P>Bike<span>S</span>olution</P>
+            </div>
+
+
+            <div class="navbar-content">
+
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#">Service Request</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="#">Login/Signup</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+ <body>
+    <h3 class="text-center my-3">Request Form</h3>   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                      <form action="/" method = "POST" >
+                        {% csrf_token %}
+
+                     <div class="md-3">
+                        <label for="name">Name</label>
+                        <input name = "name" type="text" id="name"class="form-control" placeholder="Enter your name">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="address">Address</label>
+                        <input name = "address" type="text" id="address"class="form-control" placeholder="Enter your address">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="contact">Contact</label>
+                        <input name = "contact" type="text" id="contact"class="form-control" placeholder="Enter your contact number">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="b_model">Bike Model</label>
+                        <input name = "b_model" type="text" id="b_model"class="form-control" placeholder="Enter your bike model">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="b_reg_no">Bike Registration No.</label>
+                        <input name = "b_reg_no" type="text" id="b_reg_no" class="form-control" placeholder="Enter Bike Registration Number">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="s_type">Service Type</label>
+                        <input name = "s_type" type="text" id="s_type"class="form-control" placeholder="Enter Service Type">
+                     </div>
+
+                     <div class="md-3">
+                        <label for="desc">Description</label>
+                        <textarea name="desc" id="desc" class="form-control" rows="5" placeholder="Describe your problem"></textarea>
+                     </div>
+
+                     <div class="container text-center">
+                        <button type="submit" name="send">Request</button>  
+                     </div>
+
+                      </form>
+                    </div>
+                  </div>       
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+     <!-- Footer part -->
+     <div class="footer">
+
+        <div class="row">
+
+            <div class="col">
+                <h3 class="footer-logo">Bike<span>S</span>olution</h3>
+                <ul>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="{% url 'requests' %}"> Services</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Support Links</h3>
+                <ul>
+                    <li><a href=""> Privacy Policy</a></li>
+                    <li><a href=""> Terms and Condition</a></li>
+                    <li><a href=""> Support</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="">12 PC,Road Mohammadpur</a></li>
+                    <li><a href=""> bike_solution@gmail.com</a></li>
+                    <li><a href=""> 01824755531</a></li>
+                </ul>
+            </div>
+
+            <hr>
+            
+            <div class="copyright">
+                <p>Copyright 2023 All Right Reserved</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4e1dbdcb1.js" crossorigin="anonymous"></script>
+</body>
+</html>
