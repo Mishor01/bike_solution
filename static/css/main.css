@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* Header Part */
+.header{
+    background: #111827;
+    height: 100px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-logo p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #fff;
+
+}
+
+.navbar-logo span{
+    color: #FA8E18;
+}
+
+.navbar-content{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-content ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.navbar-content ul li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.navbar-content a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.navbar-content ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #3AABCC;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.75s;
+
+}
+
+.navbar-content ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.cart-total{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background: #FA8E18;
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    font-size: 10px;
+
+}
+
+/* product page part */
+.row.products{
+    margin-top: 150px;
+}
+
+
+.box-element{
+    box-shadow: hsl(0, 0%, 80%)0 0 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.thumbail{
+    width: 100%;
+    height: 200px;
+    -webkit-box-shadow: -1px 3px 5px -2px;
+    -moz-box-shadow: -1px -3px 5px -2px;
+    box-shadow: -1px -3px 5px -2px rgba(0, 0, 0, 0.5);
+
+}
+
+.add-btn{
+    border: 2px solid #3AABCC;
+    outline: none;
+}
+
+.add-btn:hover{
+    background: #3AABCC;
+    color: #fff;
+}
+
+.view-btn{
+    border: 2px solid #FA8E18;
+    outline: none;
+}
+
+.view-btn:hover{
+    background: #FA8E18;
+    color: #fff;
+}
+
+
+/* cart page part */
+
+.row.cartpage-row1{
+    margin-top: 80px;
+}
+
+.continueshopping-btn{
+    border: 2px solid #3AABCC;
+    outline: none;
+}
+
+.continueshopping-btn:hover{
+    background: #3AABCC;
+    color: #fff;
+}
+
+.gotocheckout-btn{
+    float: right;
+    border: 2px solid #FA8E18;
+    outline: none;
+}
+
+.gotocheckout-btn:hover{
+    background: #FA8E18;
+    color: #fff;
+}
+
+.cart-row{
+    display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3AABCC;
+}
+
+.row-img{
+    width: 100px;
+}
+
+.quantity{
+    display: inline-block;
+    font-weight: 700;
+    padding-right: 10px;
+
+}
+
+.chg-quantity{
+    width: 12px;
+    cursor: pointer;
+    display: block;
+    margin-top: 5px;
+
+}
+
+
+/* Checkout Page Part */
+
+.row.checkout-row{
+    margin-top: 120px;
+    
+}
+
+.form-field{
+    width: 250px;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.form-control{
+    border: 1px solid #3AABCC;
+}
+
+.shipping-info{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.continue-btn{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 2px solid #FA8E18;
+    outline: none;
+    text-decoration: none;
+    color: #000;
+    padding: 10px, 10px;
+}
+
+.btn-continue{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 2px solid #FA8E18;
+    outline: none;
+}
+
+.btn-continue:hover{
+    background: #FA8E18;
+    color: #fff;
+}
+
+.hidden{
+    display: none!important;
+}
+
+
+
+
+.checkoutpage-items{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.checkoutpage-total{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+
+
+.confirmation-div{
+    margin-top: 150px;
+}
+
+
+
+
+/* Footer Part */
+.footer{
+    width: 100%;
+    margin-top: 350px;
+    background: #1F2123;
+    padding: 25px 25px;
+}
+
+.footer .footer-logo span{
+    color: #FA8E18;
+}
+
+.footer-right-img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.copyright{
+    color: #fff;
+    text-align: right;
+    margin-top: 45px;
+}
+
+.footer hr{
+    color: #fff;
+    transform: translateY(30px);
+}

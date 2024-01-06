@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* Header Part */
+.header{
+    background: #111827;
+    height: 100px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-logo p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #fff;
+
+}
+
+.navbar-logo span{
+    color: #FA8E18;
+}
+
+.navbar-content{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-content ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.navbar-content ul li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.navbar-content a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.navbar-content ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #3AABCC;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.75s;
+
+}
+
+.navbar-content ul li:hover::after{
+    width: 100%;
+}
+
+
+
+/*  */
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)), url(images/front-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.title{
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+    
+}
+
+button{
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #FA8E18;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+}
+
+button:hover{
+    background: #FA8E18;
+    color: #000;
+    font-weight: bold;
+}
+
+.slider{
+    color: #FA8E18;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+}
+
+
+
+/* KEY FRAME POSITIONING THE TEXT SLIDE */
+
+@keyframes slider {
+
+    0%{margin-top: -400px;}
+    5%{margin-top: -200px;}
+    30%{margin-top: -200px;}
+    35%{margin-top: 0px;}
+    65%{margin-top: 0px;}
+    70%{margin-top: 200px;}
+    100%{margin-top: 200px;}
+
+}
+
+
+/* Services Section */
+
+.services{
+    margin-top: 205px;
+    margin-bottom: 85px;
+
+}
+
+.services h1{
+    font-weight: 500;
+    /*for underline border design it used to make position raltive*/
+    position: relative;
+    font-size: 2.5rem;
+}
+
+/*Underline border desing part*/
+.services h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    width: 150px;
+    background: #3AABCC;
+    transform: translateX(35px);
+}
+
+.service-box{
+    padding: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.20);
+    border: 3px solid #111827;
+}
+
+.service-box a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 8px;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid #3AABCC;
+}
+
+.service-box h3{
+    font-weight: 400;
+}
+
+
+
+
+
+/* Schedule Service part */
+.schedule-title{
+    margin-top: 120px;
+    position: relative;
+}
+
+.schedule-title img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.service-div{
+    position: absolute;
+    transform: translate(650px, -380px);
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.20);
+    
+}
+
+.service-div-title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 700;
+}
+
+.number{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 800;
+    color: #FA8E18;
+}
+
+
+.service-div-2{
+    margin-top: 80px;
+}
+
+
+
+.service-div-2 ul li{
+    list-style: none;
+    font-size: larger;
+}
+
+
+
+/* Mechanic Page */
+
+.mechanic-page-container{
+    margin-top: 80px;
+}
+
+
+
+.view-btn{
+    border: 2px solid #FA8E18;
+    outline: none;
+    width: 100%;
+}
+
+.view-btn:hover{
+    background: #FA8E18;
+    color: #fff;
+}
+
+
+
+
+/* Mechanic Profile page */
+
+.mechanic-profile-container{
+    margin-top: 100px;
+}
+
+
+
+.confirmation-div{
+    margin-top: 150px;
+}
+
+.message-div{
+    transform: translate(80%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    width: 430px;
+    height: 120px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.20);
+    padding: 25px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+/* Footer Part */
+.footer{
+    width: 100%;
+    margin-top: 350px;
+    background: #1F2123;
+    padding: 25px 25px;
+}
+
+.footer .footer-logo span{
+    color: #FA8E18;
+}
+
+.footer-right-img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.copyright{
+    color: #fff;
+    text-align: right;
+    margin-top: 45px;
+}
+
+.footer hr{
+    color: #fff;
+    transform: translateY(30px);
+}
